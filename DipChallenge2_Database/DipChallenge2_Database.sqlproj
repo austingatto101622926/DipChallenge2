@@ -58,4 +58,13 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Client.sql" />
+    <Build Include="Event.sql" />
+    <Build Include="Tour.sql" />
+    <Build Include="Booking.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DipChallenge2_Database.refactorlog" />
+  </ItemGroup>
 </Project>

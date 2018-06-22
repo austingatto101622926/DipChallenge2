@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="cb11bc26-62a1-4f6c-a428-63474a8f284a" ChangeDateTime="06/22/2018 00:08:54">
+    <Property Name="ElementName" Value="[dbo].[Event].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EventID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1481532-e911-4641-b0e3-ab518bc1af54" ChangeDateTime="06/22/2018 00:14:27">
+    <Property Name="ElementName" Value="[dbo].[Event].[EventYear]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EventDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="688c25a4-f400-46a4-b0f2-05b0e605e89e" ChangeDateTime="06/22/2018 00:14:35">
+    <Property Name="ElementName" Value="[dbo].[Event].[EventMonth]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fee" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="159cc558-98aa-4d55-8da6-c472be33095c" ChangeDateTime="06/22/2018 00:18:23">
+    <Property Name="ElementName" Value="[dbo].[Tour].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Tour]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TourID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b0f49f5-6bed-4721-8c3a-f06d0aa874ec" ChangeDateTime="06/22/2018 00:21:39">
+    <Property Name="ElementName" Value="[dbo].[Booking].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Booking]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Payment" />
+  </Operation>
+</Operations>
