@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHandler.cs" />
+    <Compile Include="DataHandlers\EventHandler.cs" />
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Event.cs" />
