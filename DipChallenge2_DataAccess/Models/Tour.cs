@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DipChallenge2_DataAccess.Models
+namespace DipChallenge2_DataAccess
 {
     public class Tour
     {
@@ -14,3 +14,4 @@ namespace DipChallenge2_DataAccess.Models
         public virtual ICollection<Event> Events { get; set; }
     }
 }
+
