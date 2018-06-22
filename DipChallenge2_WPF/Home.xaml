@@ -10,5 +10,6 @@
     <Grid>
         <Button Content="Events" HorizontalAlignment="Left" Margin="350,200,0,0" VerticalAlignment="Top" Width="75" Click="Events_Click"/>
         <Button Content="Bookings" HorizontalAlignment="Left" Margin="350,230,0,0" VerticalAlignment="Top" Width="75" Click="Bookings_Click"/>
+        <Button Content="Clients" HorizontalAlignment="Left" Margin="350,260,0,0" VerticalAlignment="Top" Width="75" Click="Clients_Click"/>
     </Grid>
 </Page>

@@ -18,10 +18,12 @@ namespace DipChallenge2_WPF
             Home = home;
             Events = new Events(this);
             Bookings = new Bookings(this);
+            Clients = new Clients(this);
         }
 
         public Home Home { get; set; }
         public Events Events { get; set; }
         public Bookings Bookings { get; set; }
+        public Clients Clients { get; set; }
     }
 }

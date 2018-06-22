@@ -36,6 +36,10 @@ namespace DipChallenge2_WPF
         {
             NavigationService.Navigate(Control.Bookings);
         }
-        
+
+        private void Clients_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Control.Clients);
+        }
     }
 }
