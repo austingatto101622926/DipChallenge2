@@ -17,28 +17,29 @@ using DipChallenge2_DataAccess;
 namespace DipChallenge2_WPF
 {
     /// <summary>
-    /// Interaction logic for Events.xaml
+    /// Interaction logic for Bookings.xaml
     /// </summary>
-    public partial class Events : Page
+    public partial class Bookings : Page
     {
         Control Control;
-        public Events(Control control)
+        public Bookings(Control control, int? id = null)
         {
             InitializeComponent();
             Control = control;
-            PopulateElements();
+            PopulateElements(id);
         }
 
-        private async void PopulateElements()
+        private async void PopulateElements(int? id)
         {
-            EventsListView.ItemsSource = await Control.DH.Event.GET();
-        }
-
-        private void Bookings_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = sender as Button;
-            MessageBox.Show("EventID: " + button.Tag);
-            NavigationService.Navigate(Control.Bookings = new Bookings(Control, int.Parse(button.Tag.ToString())));
+            List<Booking> bookings = await Control.DH.Booking.GET();
+            if (id == null)
+            {
+                BookingsListView.ItemsSource = bookings;
+            }
+            else
+            {
+                BookingsListView.ItemsSource = bookings.Where(B => B.EventID == id);
+            }
         }
     }
 }

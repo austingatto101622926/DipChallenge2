@@ -5,9 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DipChallenge2_WPF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="600"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
     <Grid>
-        <Button Content="Events" HorizontalAlignment="Left" Margin="250,200,0,0" VerticalAlignment="Top" Width="75" Click="Events_Click"/>
+        <Button Content="Events" HorizontalAlignment="Left" Margin="350,200,0,0" VerticalAlignment="Top" Width="75" Click="Events_Click"/>
+        <Button Content="Bookings" HorizontalAlignment="Left" Margin="350,230,0,0" VerticalAlignment="Top" Width="75" Click="Bookings_Click"/>
     </Grid>
 </Page>
