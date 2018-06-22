@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DipChallenge2_DataAccess;
 
 namespace DipChallenge2_WPF
 {
@@ -21,11 +22,22 @@ namespace DipChallenge2_WPF
     public partial class Events : Page
     {
         Control Control;
-        
         public Events(Control control)
         {
             InitializeComponent();
             Control = control;
+            PopulateElements();
+        }
+
+        private async void PopulateElements()
+        {
+            EventsListView.ItemsSource = await Control.DH.Event.GET();
+        }
+
+        private void Bookings_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+
         }
     }
 }
