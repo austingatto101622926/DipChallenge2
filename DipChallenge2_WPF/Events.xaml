@@ -1,0 +1,26 @@
+﻿<Page x:Class="DipChallenge2_WPF.Events"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DipChallenge2_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="Events">
+    <Grid>
+        <ListView Name="EventsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="TourName: "/>
+                        <TextBlock Text="{Binding Tour.TourName}"/>
+                        <TextBlock Text="Date: "/>
+                        <TextBlock Text="{Binding EventDate}"/>
+                        <TextBlock Text="Fee: "/>
+                        <TextBlock Text="{Binding Fee}"/>
+                    </WrapPanel>
+                </DataTemplate> 
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
