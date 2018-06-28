@@ -14,6 +14,23 @@
         </Grid.ColumnDefinitions>
         
         <ListView Margin="20" Name="ClientsListView" Grid.Column="0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ClientID" Width="auto" DisplayMemberBinding="{Binding ClientID}"/>
+                    <GridViewColumn Header="GivenName" Width="auto" DisplayMemberBinding="{Binding GivenName}"/>
+                    <GridViewColumn Header="Surname" Width="auto" DisplayMemberBinding="{Binding Surname}"/>
+                    <GridViewColumn Header="Gender" Width="auto" DisplayMemberBinding="{Binding Gender}"/>
+                    <GridViewColumn Header="Edit" Width="auto">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Edit" Click="Edit_Click" Tag="{Binding ClientID}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+                
+                
+            </ListView.View>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
